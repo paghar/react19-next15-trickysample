@@ -4,7 +4,10 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head />
-      <body className="antialiased">
+      <body
+        className="flex items-center justify-center "
+        style={{ background: "#edf2f7" }}
+      >
         <Main />
         <NextScript />
       </body>

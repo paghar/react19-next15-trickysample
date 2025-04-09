@@ -13,8 +13,16 @@
     "isolatedModules": true,
     "jsx": "preserve",
     "incremental": true,
-    "paths": {
-      "@/*": ["./src/*"]
+    "paths": {   
+       
+      "@components/*": ["./src/components/*"],
+      "@containers/*": ["./src/containers/*"],
+      "@data/*": ["./src/data/*"],
+      "@contexts/*": ["./src/contexts/*"],     
+      "@settings/*": ["./src/settings/*"],
+      "@styles/*": ["./src/styles/*"],
+      "@utils/*": ["./src/utils/*"],
+      "@hooks/*": ["./src/hooks/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
