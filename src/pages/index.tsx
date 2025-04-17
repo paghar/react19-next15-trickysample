@@ -24,7 +24,7 @@ export default function Home() {
           <div className="grid grid-cols-1 gap-2 mt-12 sm:grid-cols-3 lg:mt-20   ">
             {
               CardInfo.map((item,index)=>(
-                <Card key={index} title={item.title} description={item.description} svg={item.svg}/>
+                <Card key={index} title={item.title} description={item.description} svg={item.svg} href={item.href}/>
               ))
             } 
           </div>

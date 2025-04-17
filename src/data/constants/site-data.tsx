@@ -28,32 +28,8 @@ export const header = {
 export const CardInfo = [
   {
     title:"useTransition",
-    description:"useTransition is a React Hook that lets you render a part of the UI in the background.",
-    svg:<FcAlarmClock size={60}/>
-  },
-  {
-    title:"useDebugValue",
-    description:"useDebugValue is a React Hook that lets you add a label to a custom Hook in React DevTools.",
-    svg:<FcAlarmClock size={60}/>
-  },
-  {
-    title:"useDeferredValue",
-    description:"useDeferredValue is a React Hook that lets you defer updating a part of the UI.",
-    svg:<FcAlarmClock size={60}/>
-  },
-  {
-    title:"useId",
-    description:"useId is a React Hook for generating unique IDs that can be passed to accessibility attributes.",
-    svg:<FcAlarmClock size={60}/>
-  },
-  {
-    title:"useImperativeHandle",
-    description:"useImperativeHandle is a React Hook that lets you customize the handle exposed as a ref.",
-    svg:<FcAlarmClock size={60}/>
-  },
-  {
-    title:"useImperativeHandle",
-    description:"useImperativeHandle is a React Hook that lets you customize the handle exposed as a ref.",
-    svg:<FcAlarmClock size={60}/>
+    description:"Mastering useTransition in React: Building a High-Performance Search for 50K Record Case Study",
+    svg:<FcAlarmClock size={60}/>,
+    href:"/MassiveSearchFilter"
   },  
 ];
