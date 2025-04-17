@@ -1,4 +1,4 @@
-import React, { useMemo, useState, useTransition } from "react";
+import React, { useState, useTransition } from "react";
 
 // 🔧 Fake user generator
 const generateUsers = (count: number) => {
@@ -12,24 +12,25 @@ const generateUsers = (count: number) => {
 
 const usersData = generateUsers(2000);
 
-export default function OriginalApproach() {
+export default function MassiveSearchFilter() {
   const [query, setQuery] = useState("");
+  const [filteredUsers, setFilteredUsers] = useState(usersData);
   const [isPending, startTransition] = useTransition();
-  
-  const filteredUsers = useMemo(() => {
-    const lower = query.toLowerCase();
-    return usersData.filter(
-      (user) =>
-        user.name.toLowerCase().includes(lower) ||
-          user.email.toLowerCase().includes(lower)
-    );
-  }, [query]);
 
-  const handleSearch = (e: React.ChangeEvent<HTMLInputElement>) => {
+  const handleSearch = (e: { target: { value: any; }; }) => {
     const value = e.target.value;
-    startTransition(() => setQuery(value));
+    setQuery(value);
+
+    startTransition(() => {
+      const lower = value.toLowerCase();
+      const filtered = usersData.filter(
+        (user) =>
+          user.name.toLowerCase().includes(lower) ||
+          user.email.toLowerCase().includes(lower)
+      );
+      setFilteredUsers(filtered);
+    });
   };
- 
 
   const highlight = (text: string, query: string) => {
     if (!query) return text;
@@ -47,7 +48,7 @@ export default function OriginalApproach() {
   };
 
   return (
-    <div className="min-h-screen p-6 font-sans">
+    <div className="min-h-screen bg-gray-100 p-6 font-sans">
       <div className="max-w-3xl mx-auto bg-white p-6 rounded-2xl border-2 border-pink-200 shadow-md">
         <h1 className="text-2xl font-bold text-pink-600 mb-4">
           👩‍💻 Massive Search Filter (50,000 Users)

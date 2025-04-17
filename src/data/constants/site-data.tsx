@@ -32,4 +32,10 @@ export const CardInfo = [
     svg:<FcAlarmClock size={60}/>,
     href:"/MassiveSearchFilter"
   },  
+  {
+    title:"useTransition",
+    description:"Improving React Performance with useTransition: A Deep Dive into a Theme Switcher Example",
+    svg:<FcAlarmClock size={60}/>,
+    href:"/ThemeSwitcher"
+  },  
 ];
