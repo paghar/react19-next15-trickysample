@@ -48,7 +48,7 @@ export default function MassiveSearchFilter() {
   };
 
   return (
-    <div className="min-h-screen bg-gray-100 p-6 font-sans">
+    <div className="min-h-screen p-6 font-sans">
       <div className="max-w-3xl mx-auto bg-white p-6 rounded-2xl border-2 border-pink-200 shadow-md">
         <h1 className="text-2xl font-bold text-pink-600 mb-4">
           👩‍💻 Massive Search Filter (50,000 Users)

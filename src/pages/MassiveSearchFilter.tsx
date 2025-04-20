@@ -1,6 +1,6 @@
 import React from "react";
-import OriginalApproach from "@components/useTransition/OriginalApproach";
-import OptimizedComponent from "@components/useTransition/OptimizedComponent";
+import OriginalApproach from "@components/MassiveSearchFilter/OriginalApproach";
+import OptimizedComponent from "@components/MassiveSearchFilter/OptimizedComponent";
 
 export default function MassiveSearchFilter() {
   return (

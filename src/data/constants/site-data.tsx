@@ -1,4 +1,7 @@
-import { FcAlarmClock } from "react-icons/fc";
+import { FcReddit } from "react-icons/fc";
+import { FcVoicePresentation } from "react-icons/fc";
+
+
 
 export const siteSettings = {
   name: "",
@@ -27,15 +30,15 @@ export const header = {
 
 export const CardInfo = [
   {
-    title:"useTransition",
-    description:"Mastering useTransition in React: Building a High-Performance Search for 50K Record Case Study",
-    svg:<FcAlarmClock size={60}/>,
+    title:"Mastering useTransition in React:",
+    description:"Building a High-Performance Search for 50K Record Case Study",
+    svg:<FcVoicePresentation size={60}/>,
     href:"/MassiveSearchFilter"
   },  
   {
-    title:"useTransition",
-    description:"Improving React Performance with useTransition: A Deep Dive into a Theme Switcher Example",
-    svg:<FcAlarmClock size={60}/>,
+    title:"Improving React Performance with useTransition:",
+    description:" A Deep Dive into a Theme Switcher Example",
+    svg:<FcReddit size={60}/>,
     href:"/ThemeSwitcher"
   },  
 ];
